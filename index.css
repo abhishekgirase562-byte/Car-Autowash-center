@@ -1,0 +1,722 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #222;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ==========================
+   TOP BAR
+========================== */
+
+.top-bar {
+    background: #f4f4f4;
+    padding: 18px 0;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo h1 {
+    font-size: 40px;
+    color: #e81c2e;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #202c45;
+}
+
+.info {
+    display: flex;
+    gap: 35px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.box i {
+    font-size: 28px;
+    color: #e81c2e;
+}
+
+.box h4 {
+    color: #202c45;
+    font-size: 17px;
+}
+
+.box p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+nav {
+    background: #202c45;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    color: #fff;
+    display: block;
+    padding: 22px 18px;
+    font-size: 15px;
+    transition: .3s;
+}
+
+nav ul li a:hover {
+    color: #e81c2e;
+}
+
+.btn {
+    background: #eae5e5;
+    color: #190303;
+    padding: 12px 25px;
+    border-radius: 40px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #e81c2e;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero {
+    height: 90vh;
+    background: url("Autowash/img/carousel-1.jpg") center center/cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .60);
+}
+
+.hero-content {
+    position: relative;
+    color: #fff;
+    z-index: 10;
+}
+
+.hero-content h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #e81c2e;
+}
+
+.hero-content h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.hero-btn {
+    background: #e81c2e;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.hero-btn:hover {
+    background: #fff;
+    color: #e81c2e;
+}
+
+/* ==========================
+   ABOUT
+========================== */
+
+.about {
+    padding: 100px 0;
+}
+
+.about .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-image img {
+    border-radius: 10px;
+}
+
+.about-content h4 {
+    color: #e81c2e;
+    margin-bottom: 10px;
+}
+
+.about-content h2 {
+    font-size: 42px;
+    color: #202c45;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.about-content ul li {
+    margin-bottom: 12px;
+    color: #444;
+    font-weight: 500;
+}
+
+/* ==========================
+   SERVICES
+========================== */
+
+.services {
+    background: #f8f8f8;
+    padding: 100px 0;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.title h4 {
+    color: #e81c2e;
+}
+
+.title h2 {
+    font-size: 42px;
+    color: #202c45;
+}
+
+.services .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.service-box {
+    background: #fff;
+    padding: 40px 25px;
+    text-align: center;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.service-box:hover {
+    transform: translateY(-8px);
+}
+
+.service-box i {
+    font-size: 55px;
+    color: #e81c2e;
+    margin-bottom: 20px;
+}
+
+.service-box h3 {
+    color: #202c45;
+    margin-bottom: 15px;
+}
+
+.service-box p {
+    color: #666;
+    line-height: 1.7;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:992px) {
+
+    .info {
+        flex-direction: column;
+    }
+
+    .about .container {
+        grid-template-columns: 1fr;
+    }
+
+    .services .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-content h1 {
+        font-size: 50px;
+    }
+
+}
+
+@media(max-width:768px) {
+
+    nav .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li a {
+        text-align: center;
+    }
+
+    .services .container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content h3 {
+        font-size: 22px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+}
+
+/* COUNTER */
+
+.counter {
+    background: #202c45;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.counter .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.counter-box h2 {
+    font-size: 55px;
+    color: #e81c2e;
+}
+
+.counter-box p {
+    margin-top: 10px;
+}
+
+/* PRICING */
+
+.pricing {
+    padding: 100px 0;
+}
+
+.pricing .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.price-card {
+    border: 1px solid #c6bdbd;
+    text-align: center;
+    padding: 40px;
+    transition: 1s;
+
+
+}
+
+.price-card.active,
+.price-card:hover {
+    background: #536484;
+    color: #230505;
+}
+
+.price-card h1 {
+    font-size: 55px;
+    margin: 20px 0;
+    color: #e81c2e;
+}
+
+.price-card ul {
+    margin: 30px 0;
+}
+
+.price-card ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* LOCATION */
+
+.locations {
+    background: #f8f8f8;
+    padding: 100px 0;
+}
+
+.locations .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.location-box {
+    background: #fff;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.location-box h3 {
+    color: #202c45;
+    margin-bottom: 10px;
+}
+
+.location-box p {
+    color: #666;
+}
+
+
+
+/* APPOINTMENT */
+
+.appointment {
+    padding: 100px 0;
+    background: #202c45;
+    color: #fff;
+}
+
+.appointment .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+}
+
+.appointment-form button {
+    border: none;
+    cursor: pointer;
+}
+
+/* TEAM */
+
+.team {
+    padding: 100px 0;
+}
+
+.team .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.team-box {
+    text-align: center;
+}
+
+.team-box img {
+    border-radius: 8px;
+}
+
+.team-box h3 {
+    margin-top: 15px;
+}
+
+/* TESTIMONIAL */
+
+.testimonial {
+    padding: 100px 0;
+    background: #f8f8f8;
+}
+
+.testimonial .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.testimonial-box {
+    background: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+.testimonial-box img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/* BLOG */
+
+.blog {
+    padding: 100px 0;
+}
+
+.blog .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.blog-box {
+    border: 1px solid #ddd;
+}
+
+.blog-box img {
+    width: 100%;
+}
+
+.blog-box h3,
+.blog-box p,
+.blog-box a {
+    padding: 15px;
+}
+
+.blog-box a {
+    display: inline-block;
+    color: #e81c2e;
+}
+
+/* FOOTER */
+
+footer {
+    background: #202c45;
+    color: #fff;
+    padding-top: 80px;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.footer-box a {
+    display: block;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+
+
+
+
+
+
+/* ---------- TABLET ---------- */
+
+@media screen and (max-width:1023px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .top-bar .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .info {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        height: 70vh;
+    }
+
+    .hero-content h1 {
+        font-size: 50px;
+    }
+
+    .hero-content h3 {
+        font-size: 28px;
+    }
+
+    .about .container,
+    .appointment .container {
+        grid-template-columns: 1fr;
+    }
+
+    .services .container,
+    .pricing .container,
+    .locations .container,
+    .team .container,
+    .blog .container,
+    .counter .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonial .container {
+        grid-template-columns: 1fr;
+    }
+
+    footer .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* ---------- MOBILE ---------- */
+
+@media screen and (max-width:767px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .top-bar .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        justify-content: center;
+    }
+
+    nav .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .btn {
+        margin: 15px auto;
+    }
+
+    .hero {
+        height: 60vh;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .hero-content h3 {
+        font-size: 20px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .about .container,
+    .services .container,
+    .counter .container,
+    .pricing .container,
+    .locations .container,
+    .appointment .container,
+    .team .container,
+    .testimonial .container,
+    .blog .container,
+    footer .container {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+}
